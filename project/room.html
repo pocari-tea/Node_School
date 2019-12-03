@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>끄슴 온라인</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <style>
+            body
+            {
+                background:#3498db;
+                width:100%;
+            }
+            h1
+            {
+                font-size:1.5em;
+                color:#525252;
+            }
+            .lleft
+            {
+                float: left;
+            }
+            .text-ccenter 
+            {
+                text-align: center;
+            }
+            #lobby
+            {
+                    background:white;
+                    width: 70%;
+                    height: 600px;
+                    margin: 0 auto 0;
+                    padding:0;
+            }
+            ul{list-style:none}
+            img{text-align: center}
+            a{font-weight: bold}
+        
+        </style>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        
+        <header>
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <a class="flex-sm-fill text-sm-center nav-link active" href="Login.html" style="margin: 0 0 30px">Login</a>
+            </nav>
+        </header>
+        
+        <div id="lobby">            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white;">
+                <a class="navbar-brand" href="lobby.html">GGusm online</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <button type="button"><a href="lobby.html" style="color: black">X</a></button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="lleft" style="width: 20%; height: 50%">
+                <nav>
+                    <a class="nav-link text-ccenter" style="margin: 0 0 10px">플레이어 목록</a>
+                    
+                    <ul>
+                        <li>모션</li>
+
+                        <form action="서버.js" method="GET" style="float: left;">
+                        
+                        </form>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="text-ccenter" style="width: 100%; height: 50%">
+                    <a class="nav-link active text-ccenter">끝말잇기</a>
+                    <div>
+                        
+                    </div>
+            </div>
+
+            <div class="lleft"style="width: 20%; height: 50%">
+                <a class="nav-link active text-ccenter " style="margin: 0 0 10px">내 정보</a>
+
+                <form action="서버.js" method="GET">
+                    <div style="text-align: center">
+                        받아온 닉네임
+                    </div>
+                </form>
+
+                <div style="text-align: center">
+                    <img src="끄투.bmp" width="50%" height="50%">
+                </div>
+            </div>
+
+            <div class="text-ccenter" style="width: 100%; height: 50%">
+                    <a class="nav-link active text-ccenter">채팅</a>
+                    <div>
+                        
+                    </div>
+            </div>
+    </body>
+</html>
